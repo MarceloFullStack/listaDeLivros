@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Bootstrap codigo CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-w6tc0TXjTUnYHwVwGgnYyV12wbRoJQo9iMlC2KdkdmVvntGgzT9jvqNEF/uKaF4m" crossorigin="anonymous">
+    <!-- fontAwesome codigo CDN -->
+    <script src="https://kit.fontawesome.com/37570361b3.js" crossorigin="anonymous"></script>
+    <title>Lista de Livros</title>
+</head>
+<body>
+    <!-- #titulo principal# -->
+    <div class="container mt-4 text-center">
+        <h1 class="dysplay-4"><i class="fas fa-book-open text-primary"></i> Minha Lista de <span class="text-primary">Livros</span></h1>
+        
+        <!-- formulario titulo -->
+        <form action="" id="book-form">
+            <div class="form-group">
+                <label for="title">Titulo</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <!-- formulario autor -->
+            <div class="form-group">
+                <label for="autor">Autor</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <!-- formulario ISBN# -->
+            <div class="form-group">
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <!--  Botao de adicionar livro -->
+            <input type="submit" value="Adicione o livro" class="btn btn-primary btn-block">
+        </form>
+
+            <!-- Tabela de organizacao  -->
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Autor</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <!-- Script javascript  -->
+    <script src="app.js"></script>
+</body>
+</html>
